@@ -12,7 +12,7 @@ export default function Footer() {
         <p>
           Built with Next.js &amp; Tailwind CSS ·{" "}
           <a
-            href="https://www.quickresumebuilder.com"
+            href="https://www.quickresumebuilder.online"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-fuchsia-600 hover:underline"

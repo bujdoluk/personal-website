@@ -1,10 +1,22 @@
+import Image from "next/image";
 import { profile } from "@/lib/data";
 
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-20">
       <div className="grid gap-10 md:grid-cols-[auto_1fr] md:items-center md:gap-16">
-        <div className="h-32 w-32 shrink-0 rounded-3xl bg-gradient-to-br from-violet-600 via-fuchsia-500 to-orange-400 shadow-lg shadow-fuchsia-500/20 md:h-40 md:w-40" />
+        {profile.avatarUrl ? (
+          <Image
+            src={profile.avatarUrl}
+            alt={profile.name}
+            width={160}
+            height={160}
+            priority
+            className="h-32 w-32 shrink-0 rounded-3xl object-cover shadow-lg shadow-fuchsia-500/20 md:h-40 md:w-40"
+          />
+        ) : (
+          <div className="h-32 w-32 shrink-0 rounded-3xl bg-gradient-to-br from-violet-600 via-fuchsia-500 to-orange-400 shadow-lg shadow-fuchsia-500/20 md:h-40 md:w-40" />
+        )}
 
         <div>
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-fuchsia-600">

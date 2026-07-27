@@ -71,6 +71,7 @@ export default function Resume() {
                     <p className="text-xs text-foreground/50">
                       {item.start} — {item.end}
                     </p>
+                    <p className="text-sm">{item.subject}</p>
                   </div>
                 ))}
               </div>
@@ -106,7 +107,7 @@ export default function Resume() {
         <div className="border-t border-black/5 bg-black/[0.02] px-8 py-5 text-sm text-foreground/60 md:px-10">
           Built this resume with my own tool —{" "}
           <a
-            href="https://www.quickresumebuilder.com"
+            href="https://www.quickresumebuilder.online"
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-fuchsia-600 hover:underline"

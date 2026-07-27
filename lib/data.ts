@@ -1,11 +1,12 @@
 export const profile = {
-  name: "Alex Novak",
+  name: "Lukáš Bujdoš",
   role: "Web Developer",
   tagline: "I build fast, accessible, and delightful web experiences — from pixel to production.",
   bio: "I'm a full-stack web developer who loves turning ambiguous ideas into polished, shippable products. I've spent the last several years working across the stack — React and Next.js on the front end, Node.js and PostgreSQL on the back end — with a focus on performance, clean UX, and code that's easy to maintain. When I'm not shipping features, I'm usually tinkering on side projects like QuickResumeBuilder.",
-  location: "Bratislava, Slovakia",
-  email: "hello@example.com",
+  location: "Nižna Myšľa, Slovakia",
+  email: "lukas.bujdos@gmail.com",
   resumeUrl: "/resume.pdf",
+  avatarUrl: "/lukas.webp",
   socials: {
     github: "https://github.com/yourusername",
     linkedin: "https://linkedin.com/in/yourusername",
@@ -24,35 +25,31 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    role: "Senior Frontend Developer",
-    company: "Brightloop Software",
-    start: "2023",
-    end: "Present",
+    role: "Frontend Developer",
+    company: "Logio, Prague, Czech Republic",
+    start: "Jun 2022",
+    end: "Dec 2025",
     bullets: [
-      "Led the migration of a legacy React app to Next.js App Router, cutting page load times by 40%.",
-      "Built a component library used across 6 internal products, reducing UI inconsistencies and dev time.",
-      "Mentored two junior developers and ran weekly code reviews focused on performance and accessibility.",
+      "Worked on apps in retail and logistics",
+      "Implemented UI components from Vuetify library",
+      "Wrote custom components as a workaround for few broken components in Vuetify",
+      "Designed reusable components in Vue JS",
+      "Used leaflet.js, apexchart to implement map and graphs",
+      "Migrated project from vue2 to vue3",
+      "Used JSON:API spec for data",
+      "Wrote e2e tests in Cypress",
+      "Dockerized frontend client app",
+      "Wrote frontend tasks in jira",
     ],
   },
   {
-    role: "Full-Stack Developer",
-    company: "Northwind Digital",
-    start: "2021",
-    end: "2023",
+    role: "Production Operator",
+    company: "Marelli, Kechnec, Slovakia",
+    start: "Nov 2020",
+    end: "May 2022",
     bullets: [
-      "Shipped and maintained customer-facing features for a SaaS platform serving 50k+ monthly users.",
-      "Designed REST and GraphQL APIs backed by PostgreSQL, with a focus on query performance.",
-      "Introduced automated E2E testing with Playwright, cutting regression bugs in production by half.",
-    ],
-  },
-  {
-    role: "Junior Web Developer",
-    company: "Studio Forma",
-    start: "2019",
-    end: "2021",
-    bullets: [
-      "Built marketing sites and landing pages for clients using React, and later Next.js.",
-      "Collaborated directly with designers to translate Figma mockups into responsive, accessible UI.",
+      "Assembly of radios and tachometers for Porsche, VW, Citroen, Peugeot, Opel",
+      "Assembly, Testing, Quality Control",
     ],
   },
 ];
@@ -64,32 +61,60 @@ export type SkillGroup = {
 
 export const skills: SkillGroup[] = [
   {
-    category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue"],
+    category: "Languages",
+    items: ["Javascript", "Typescript"],
+  },
+  {
+    category: "Frameworks",
+    items: ["Nuxt", "Next"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "PostgreSQL", "Prisma", "REST & GraphQL APIs"],
+    items: ["Node.js"],
   },
   {
-    category: "Tools & Practices",
-    items: ["Git", "Docker", "CI/CD", "Testing (Playwright/Vitest)", "Vercel"],
+    category: "Databases",
+    items: ["PostgreSQL"],
+  },
+  {
+    category: "Testing",
+    items: ["Cypress", "Vitest"],
+  },
+  {
+    category: "Tools",
+    items: ["Git", "Docker", "Keycloack"],
   },
 ];
 
 export type Education = {
   school: string;
+  subject: string;
   degree: string;
   start: string;
   end: string;
 };
 
 export const education: Education[] = [
+   {
+    school: "Diploma: Programming Basics in Java Language",
+    subject: "Learning basic of programming OOP in Java, SQL database language.",
+    degree: "-",
+    start: "Oct 2019",
+    end: "May 2020",
+  },
   {
-    school: "Comenius University Bratislava",
-    degree: "B.Sc. in Computer Science",
-    start: "2016",
-    end: "2020",
+    school: "Czech Technical University in Prague",
+    subject: "Lol",
+    degree: "-",
+    start: "Sept 2017",
+    end: "Sept 2019",
+  },
+  {
+    school: "Czech Technical University in Prague",
+    subject: "Lol",
+    degree: "Bc.",
+    start: "Sept 2013",
+    end: "Sept 2017",
   },
 ];
 
@@ -106,7 +131,7 @@ export const projects: Project[] = [
     name: "QuickResumeBuilder",
     description:
       "A resume builder web app that lets anyone create a polished, ATS-friendly resume in minutes — live templates, instant PDF export, and no sign-up required to get started.",
-    url: "https://www.quickresumebuilder.com",
+    url: "https://www.quickresumebuilder.online",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     featured: true,
   },
@@ -116,12 +141,5 @@ export const projects: Project[] = [
       "A minimalist habit-tracking app with streaks, reminders, and weekly progress charts.",
     url: "#",
     tags: ["React", "Node.js", "PostgreSQL"],
-  },
-  {
-    name: "DevNotes",
-    description:
-      "A markdown-based note-taking tool for developers, with code-block syntax highlighting and instant search.",
-    url: "#",
-    tags: ["Next.js", "SQLite"],
   },
 ];
