@@ -1,8 +1,8 @@
 export const profile = {
   name: "Lukáš Bujdoš",
   role: "Web Developer",
-  tagline: "I build fast, accessible, and delightful web experiences — from pixel to production.",
-  bio: "I'm a full-stack web developer who loves turning ambiguous ideas into polished, shippable products. I've spent the last several years working across the stack — React and Next.js on the front end, Node.js and PostgreSQL on the back end — with a focus on performance, clean UX, and code that's easy to maintain. When I'm not shipping features, I'm usually tinkering on side projects like QuickResumeBuilder.",
+  tagline: "I build fast, accessible, and delightful web experiences from idea to production.",
+  bio: "I'm a frontend web developer who loves turning ambiguous ideas into polished, shippable products. I've spent the last several years working with Vue and React on the front end with a focus on clean UX, and code that's easy to maintain. When I'm not shipping features, I'm usually tinkering on side projects like QuickResumeBuilder.",
   location: "Nižná Myšľa, Slovakia",
   email: "lukas.bujdos@gmail.com",
   resumeUrl: "/Lukas_Bujdos_Resume.pdf",
