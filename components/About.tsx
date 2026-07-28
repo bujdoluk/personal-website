@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { profile } from "@/lib/data";
 
 export default function About() {
@@ -6,12 +5,12 @@ export default function About() {
     <section id="about" className="mx-auto max-w-6xl px-6 py-20">
       <div className="grid gap-10 md:grid-cols-[auto_1fr] md:items-center md:gap-16">
         {profile.avatarUrl ? (
-          <Image
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
             src={profile.avatarUrl}
             alt={profile.name}
             width={160}
             height={160}
-            priority
             className="h-32 w-32 shrink-0 rounded-3xl object-cover shadow-lg shadow-fuchsia-500/20 md:h-40 md:w-40"
           />
         ) : (

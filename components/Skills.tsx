@@ -1,10 +1,5 @@
 import { skills } from "@/lib/data";
-
-const badgeStyles = [
-  "from-violet-600 to-fuchsia-500",
-  "from-fuchsia-500 to-orange-400",
-  "from-orange-400 to-violet-600",
-];
+import SkillIcon from "@/components/SkillIcon";
 
 export default function Skills() {
   return (
@@ -17,7 +12,7 @@ export default function Skills() {
       </h2>
 
       <div className="grid gap-8 md:grid-cols-3">
-        {skills.map((group, i) => (
+        {skills.map((group) => (
           <div
             key={group.category}
             className="rounded-2xl border border-black/5 bg-white/60 p-6 shadow-sm"
@@ -29,8 +24,9 @@ export default function Skills() {
               {group.items.map((skill) => (
                 <span
                   key={skill}
-                  className={`rounded-full bg-gradient-to-r ${badgeStyles[i % badgeStyles.length]} px-3 py-1.5 text-xs font-semibold text-white shadow-sm`}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-black/10 bg-white px-3 py-1.5 text-xs font-semibold text-foreground/80 shadow-sm"
                 >
+                  <SkillIcon name={skill} />
                   {skill}
                 </span>
               ))}

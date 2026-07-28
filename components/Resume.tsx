@@ -1,4 +1,5 @@
-import { education, experience, profile, skills } from "@/lib/data";
+import { education, experience, interests, profile, skills, spokenLanguages } from "@/lib/data";
+import SkillIcon from "@/components/SkillIcon";
 
 export default function Resume() {
   return (
@@ -65,13 +66,20 @@ export default function Resume() {
               </h4>
               <div className="space-y-3">
                 {education.map((item) => (
-                  <div key={item.school}>
-                    <p className="font-semibold">{item.degree}</p>
-                    <p className="text-sm text-foreground/60">{item.school}</p>
+                  <div key={`${item.school}-${item.start}`}>
+                    <p className="font-semibold">{item.subject}</p>
+                    <p className="text-sm text-foreground/60">
+                      {item.school}
+                      {item.degree !== "-" && ` · ${item.degree}`}
+                    </p>
                     <p className="text-xs text-foreground/50">
                       {item.start} — {item.end}
                     </p>
-                    <p className="text-sm">{item.subject}</p>
+                    {item.description && (
+                      <p className="mt-1 text-sm text-foreground/70">
+                        {item.description}
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>
@@ -91,13 +99,47 @@ export default function Resume() {
                       {group.items.map((skill) => (
                         <span
                           key={skill}
-                          className="rounded-full bg-black/5 px-2.5 py-1 text-xs font-medium text-foreground/70"
+                          className="inline-flex items-center gap-1.5 rounded-full bg-black/5 px-2.5 py-1 text-xs font-medium text-foreground/70"
                         >
+                          <SkillIcon name={skill} className="h-3.5 w-3.5" />
                           {skill}
                         </span>
                       ))}
                     </div>
                   </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-display mb-4 text-lg font-bold text-fuchsia-600">
+                Languages
+              </h4>
+              <div className="space-y-1.5">
+                {spokenLanguages.map((lang) => (
+                  <div
+                    key={lang.name}
+                    className="flex items-baseline justify-between gap-3"
+                  >
+                    <p className="text-sm font-semibold">{lang.name}</p>
+                    <p className="text-xs text-foreground/50">{lang.level}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-display mb-4 text-lg font-bold text-fuchsia-600">
+                Interests
+              </h4>
+              <div className="flex flex-wrap gap-1.5">
+                {interests.map((interest) => (
+                  <span
+                    key={interest}
+                    className="rounded-full bg-black/5 px-2.5 py-1 text-xs font-medium text-foreground/70"
+                  >
+                    {interest}
+                  </span>
                 ))}
               </div>
             </div>
