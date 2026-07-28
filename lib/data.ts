@@ -5,7 +5,7 @@ export const profile = {
   bio: "I'm a full-stack web developer who loves turning ambiguous ideas into polished, shippable products. I've spent the last several years working across the stack — React and Next.js on the front end, Node.js and PostgreSQL on the back end — with a focus on performance, clean UX, and code that's easy to maintain. When I'm not shipping features, I'm usually tinkering on side projects like QuickResumeBuilder.",
   location: "Nižná Myšľa, Slovakia",
   email: "lukas.bujdos@gmail.com",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/Lukas_Bujdos_Resume.pdf",
   avatarUrl: "/lukas.webp",
   socials: {
     github: "https://github.com/bujdoluk",
