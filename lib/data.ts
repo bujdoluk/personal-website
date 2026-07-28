@@ -104,12 +104,12 @@ export type Education = {
 
 export const education: Education[] = [
    {
-    school: "Diploma: Programming Basics in Java Language",
-    subject: "Learning basic of programming OOP in Java, SQL database language.",
+    school: "IT v Kurze",
+    subject: "Diploma: Programming Basics in Java Language",
     degree: "-",
     start: "Oct 2019",
     end: "May 2020",
-    description: ""
+    description: "Learning basic of programming OOP in Java, SQL database language."
   },
   {
     school: "Czech Technical University in Prague",
