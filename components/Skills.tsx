@@ -1,14 +1,18 @@
 import { skills } from "@/lib/data";
 import SkillIcon from "@/components/SkillIcon";
+import type { Dictionary } from "@/lib/i18n";
 
-export default function Skills() {
+export default function Skills({ dict }: { dict: Dictionary }) {
+  const t = dict.skills;
+  const categories = dict.data.skills.categories as Record<string, string>;
+
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-20">
       <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-fuchsia-600">
-        Skills
+        {t.sectionLabel}
       </p>
       <h2 className="font-display mb-12 text-3xl font-bold tracking-tight md:text-4xl">
-        What I work with
+        {t.heading}
       </h2>
 
       <div className="grid gap-8 md:grid-cols-3">
@@ -18,7 +22,7 @@ export default function Skills() {
             className="rounded-2xl border border-black/5 bg-white/60 p-6 shadow-sm"
           >
             <h3 className="font-display mb-4 text-lg font-bold">
-              {group.category}
+              {categories[group.category] ?? group.category}
             </h3>
             <div className="flex flex-wrap gap-2">
               {group.items.map((skill) => (

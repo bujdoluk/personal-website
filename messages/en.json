@@ -1,0 +1,138 @@
+{
+  "navbar": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "resume": "Resume",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu"
+  },
+  "hero": {
+    "badge": "Available for new opportunities",
+    "greeting": "Hi, I'm",
+    "viewResume": "View Resume",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "sectionLabel": "About",
+    "heading": "A bit about me"
+  },
+  "experience": {
+    "sectionLabel": "Experience",
+    "heading": "Where I've worked"
+  },
+  "skills": {
+    "sectionLabel": "Skills",
+    "heading": "What I work with"
+  },
+  "projects": {
+    "sectionLabel": "Projects",
+    "heading": "Things I've built",
+    "featuredBadge": "Featured project",
+    "visitLink": "Visit"
+  },
+  "resume": {
+    "sectionLabel": "Resume",
+    "heading": "My resume",
+    "downloadPdf": "Download PDF",
+    "subsections": {
+      "experience": "Experience",
+      "education": "Education",
+      "skills": "Skills",
+      "languages": "Languages",
+      "interests": "Interests"
+    },
+    "footer": "Built this resume with my own tool —"
+  },
+  "contact": {
+    "sectionLabel": "Contact",
+    "heading": "Let's build something great together.",
+    "description": "Have a project in mind, or just want to say hi? My inbox is always open.",
+    "copyEmail": "Copy email address",
+    "copied": "Copied!",
+    "emailCopied": "Email copied to clipboard"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js & Tailwind CSS ·"
+  },
+  "notFound": {
+    "code": "404",
+    "heading": "Page not found",
+    "description": "The page you're looking for doesn't exist or may have moved.",
+    "backHome": "Back to home"
+  },
+  "data": {
+    "profile": {
+      "role": "Web Developer",
+      "tagline": "I build fast, accessible, and delightful web experiences from idea to production.",
+      "bio": "I'm a frontend web developer who loves turning ambiguous ideas into polished, shippable products. I've spent the last several years working with Vue and React on the front end with a focus on clean UX, and code that's easy to maintain. When I'm not shipping features, I'm usually tinkering on side projects like QuickResumeBuilder."
+    },
+    "skills": {
+      "categories": {
+        "Frontend": "Frontend",
+        "Frameworks": "Frameworks",
+        "Backend": "Backend",
+        "Databases": "Databases",
+        "Testing": "Testing",
+        "Tools": "Tools",
+        "Project management": "Project Management",
+        "AI": "AI"
+      }
+    },
+    "experience": [
+      {
+        "role": "Frontend Developer",
+        "bullets": [
+          "Worked on apps in retail and logistics",
+          "Implemented UI components from Vuetify library",
+          "Wrote custom components as a workaround for few broken components in Vuetify",
+          "Designed reusable components in Vue JS",
+          "Used leaflet.js, apexchart to implement map and graphs",
+          "Migrated project from vue2 to vue3",
+          "Used JSON:API spec for data",
+          "Wrote e2e tests in Cypress",
+          "Dockerized frontend client app",
+          "Wrote frontend tasks in jira"
+        ]
+      },
+      {
+        "role": "Production Operator",
+        "bullets": [
+          "Assembly of radios and tachometers for Porsche, VW, Citroen, Peugeot, Opel",
+          "Assembly, Testing, Quality Control"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "subject": "Diploma: Programming Basics in Java Language",
+        "description": "Learning basic of programming OOP in Java, SQL database language."
+      },
+      {
+        "subject": "Industry 4.0",
+        "description": "Studied subjects → AI, Statistical mechanics, Design of manufacturing processes, Industrial robots, Law, Economics"
+      },
+      {
+        "subject": "Theoretical Basics of Mechanical Engineering",
+        "description": "Studied subjects → mathematics, mechanics, physics, strength of materials, materials, technology, thermodynamics, fluid mechanics, microelectronics etc."
+      }
+    ],
+    "spokenLanguages": {
+      "levels": {
+        "Native": "Native",
+        "Professional working proficiency": "Professional working proficiency"
+      }
+    },
+    "interests": ["Hiking", "Reading", "Weight-lifting"],
+    "projects": [
+      {
+        "description": "A resume builder web app that lets anyone create a polished, ATS-friendly resume in minutes — live templates, instant PDF export, and no sign-up required to get started."
+      },
+      {
+        "description": "A product feedback management platform. Users can submit and vote on feature requests, product teams can share a public roadmap of planned/in-progress work, and publish a changelog to communicate updates — turning user feedback into actionable product decisions."
+      }
+    ]
+  }
+}

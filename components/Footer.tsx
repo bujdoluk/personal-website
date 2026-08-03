@@ -1,16 +1,18 @@
 import { profile } from "@/lib/data";
+import type { Dictionary } from "@/lib/i18n";
 
-export default function Footer() {
+export default function Footer({ dict }: { dict: Dictionary }) {
   const year = new Date().getFullYear();
+  const t = dict.footer;
 
   return (
     <footer className="border-t border-black/5 py-8">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-sm text-foreground/50 md:flex-row">
         <p>
-          © {year} {profile.name}. All rights reserved.
+          © {year} {profile.name}. {t.rights}
         </p>
         <p>
-          Built with Next.js &amp; Tailwind CSS ·{" "}
+          {t.builtWith}{" "}
           <a
             href="https://www.quickresumebuilder.online"
             target="_blank"

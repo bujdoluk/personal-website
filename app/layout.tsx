@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { profile } from "@/lib/data";
+import { getDictionary, getLocale } from "@/lib/i18n";
+import { TranslationsProvider } from "@/app/translations-context";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -14,27 +16,36 @@ const plusJakarta = Plus_Jakarta_Sans({
   weight: ["500", "600", "700", "800"],
 });
 
-export const metadata: Metadata = {
-  title: `${profile.name} — ${profile.role}`,
-  description: profile.tagline,
-  openGraph: {
-    title: `${profile.name} — ${profile.role}`,
-    description: profile.tagline,
-    type: "website",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const dict = await getDictionary(locale);
+  return {
+    title: `${profile.name} — ${dict.data.profile.role}`,
+    description: dict.data.profile.tagline,
+    openGraph: {
+      title: `${profile.name} — ${dict.data.profile.role}`,
+      description: dict.data.profile.tagline,
+      type: "website",
+    },
+  };
+}
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const dict = await getDictionary(locale);
+
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${inter.variable} ${plusJakarta.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <TranslationsProvider dict={dict}>{children}</TranslationsProvider>
+      </body>
     </html>
   );
 }

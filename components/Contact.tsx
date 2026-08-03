@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { profile } from "@/lib/data";
+import { useTranslations } from "@/app/translations-context";
 
 const socialLinks = [
   { label: "GitHub", href: profile.socials.github },
@@ -9,13 +10,14 @@ const socialLinks = [
 ];
 
 export default function Contact() {
-  const [copied, setCopied] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
+  const t = useTranslations().contact;
 
   async function copyEmail() {
     try {
       await navigator.clipboard.writeText(profile.email);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
     } catch {
       // Clipboard API unavailable — the mailto link still works as a fallback.
     }
@@ -27,13 +29,13 @@ export default function Contact() {
 
       <div className="mx-auto max-w-6xl px-6 py-24 text-center">
         <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-fuchsia-600">
-          Contact
+          {t.sectionLabel}
         </p>
         <h2 className="font-display mx-auto mb-4 max-w-2xl text-3xl font-bold tracking-tight md:text-5xl">
-          Let&apos;s build something great together.
+          {t.heading}
         </h2>
         <p className="mx-auto mb-8 max-w-xl text-foreground/70">
-          Have a project in mind, or just want to say hi? My inbox is always open.
+          {t.description}
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -47,11 +49,11 @@ export default function Contact() {
             <button
               type="button"
               onClick={copyEmail}
-              aria-label="Copy email address"
-              title={copied ? "Copied!" : "Copy email address"}
+              aria-label={t.copyEmail}
+              title={isCopied ? t.copied : t.copyEmail}
               className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/30"
             >
-              {copied ? (
+              {isCopied ? (
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -65,7 +67,7 @@ export default function Contact() {
           </div>
         </div>
         <p aria-live="polite" className="mt-2 h-4 text-xs font-medium text-fuchsia-600">
-          {copied ? "Email copied to clipboard" : ""}
+          {isCopied ? t.emailCopied : ""}
         </p>
 
         <div className="mt-6 flex items-center justify-center gap-6">

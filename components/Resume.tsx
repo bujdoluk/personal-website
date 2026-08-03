@@ -1,15 +1,20 @@
-import { education, experience, interests, profile, skills, spokenLanguages } from "@/lib/data";
+import { education, experience, profile, skills, spokenLanguages } from "@/lib/data";
 import SkillIcon from "@/components/SkillIcon";
+import type { Dictionary } from "@/lib/i18n";
 
-export default function Resume() {
+export default function Resume({ dict }: { dict: Dictionary }) {
+  const t = dict.resume;
+  const categories = dict.data.skills.categories as Record<string, string>;
+  const levels = dict.data.spokenLanguages.levels as Record<string, string>;
+
   return (
     <section id="resume" className="mx-auto max-w-6xl px-6 py-20">
       <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-fuchsia-600">
-        Resume
+        {t.sectionLabel}
       </p>
       <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
         <h2 className="font-display text-3xl font-bold tracking-tight md:text-4xl">
-          My resume
+          {t.heading}
         </h2>
         <a
           href={profile.resumeUrl}
@@ -19,7 +24,7 @@ export default function Resume() {
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          Download PDF
+          {t.downloadPdf}
         </a>
       </div>
 
@@ -28,72 +33,78 @@ export default function Resume() {
           <h3 className="font-display text-2xl font-bold md:text-3xl">
             {profile.name}
           </h3>
-          <p className="text-white/90">{profile.role} · {profile.location}</p>
+          <p className="text-white/90">{dict.data.profile.role} · {profile.location}</p>
           <p className="mt-1 text-sm text-white/80">{profile.email}</p>
         </div>
 
         <div className="grid gap-10 p-8 md:grid-cols-2 md:p-10">
           <div>
             <h4 className="font-display mb-4 text-lg font-bold text-fuchsia-600">
-              Experience
+              {t.subsections.experience}
             </h4>
             <div className="space-y-6">
-              {experience.map((job) => (
-                <div key={`${job.company}-${job.start}`}>
-                  <div className="flex flex-wrap items-baseline justify-between gap-x-3">
-                    <p className="font-semibold">{job.role}</p>
-                    <span className="text-xs text-foreground/50">
-                      {job.start} — {job.end}
-                    </span>
+              {experience.map((job, i) => {
+                const td = dict.data.experience[i];
+                return (
+                  <div key={`${job.company}-${job.start}`}>
+                    <div className="flex flex-wrap items-baseline justify-between gap-x-3">
+                      <p className="font-semibold">{td.role}</p>
+                      <span className="text-xs text-foreground/50">
+                        {job.start} — {job.end}
+                      </span>
+                    </div>
+                    <p className="mb-1 text-sm text-foreground/60">{job.company}</p>
+                    <ul className="list-disc space-y-1 pl-4 marker:text-fuchsia-400">
+                      {td.bullets.map((bullet) => (
+                        <li key={bullet} className="text-sm text-foreground/70">
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <p className="mb-1 text-sm text-foreground/60">{job.company}</p>
-                  <ul className="list-disc space-y-1 pl-4 marker:text-fuchsia-400">
-                    {job.bullets.map((bullet) => (
-                      <li key={bullet} className="text-sm text-foreground/70">
-                        {bullet}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
           <div className="flex flex-col gap-10">
             <div>
               <h4 className="font-display mb-4 text-lg font-bold text-fuchsia-600">
-                Education
+                {t.subsections.education}
               </h4>
               <div className="space-y-3">
-                {education.map((item) => (
-                  <div key={`${item.school}-${item.start}`}>
-                    <p className="font-semibold">{item.subject}</p>
-                    <p className="text-sm text-foreground/60">
-                      {item.school}
-                      {item.degree !== "-" && ` · ${item.degree}`}
-                    </p>
-                    <p className="text-xs text-foreground/50">
-                      {item.start} — {item.end}
-                    </p>
-                    {item.description && (
-                      <p className="mt-1 text-sm text-foreground/70">
-                        {item.description}
+                {education.map((item, i) => {
+                  const td = dict.data.education[i];
+                  return (
+                    <div key={`${item.school}-${item.start}`}>
+                      <p className="font-semibold">{td.subject}</p>
+                      <p className="text-sm text-foreground/60">
+                        {item.school}
+                        {item.degree !== "-" && ` · ${item.degree}`}
                       </p>
-                    )}
-                  </div>
-                ))}
+                      <p className="text-xs text-foreground/50">
+                        {item.start} — {item.end}
+                      </p>
+                      {td.description && (
+                        <p className="mt-1 text-sm text-foreground/70">
+                          {td.description}
+                        </p>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
             <div>
               <h4 className="font-display mb-4 text-lg font-bold text-fuchsia-600">
-                Skills
+                {t.subsections.skills}
               </h4>
               <div className="space-y-4">
                 {skills.map((group) => (
                   <div key={group.category}>
                     <p className="mb-1.5 text-sm font-semibold text-foreground/80">
-                      {group.category}
+                      {categories[group.category] ?? group.category}
                     </p>
                     <div className="flex flex-wrap gap-1.5">
                       {group.items.map((skill) => (
@@ -113,7 +124,7 @@ export default function Resume() {
 
             <div>
               <h4 className="font-display mb-4 text-lg font-bold text-fuchsia-600">
-                Languages
+                {t.subsections.languages}
               </h4>
               <div className="space-y-1.5">
                 {spokenLanguages.map((lang) => (
@@ -122,7 +133,9 @@ export default function Resume() {
                     className="flex items-baseline justify-between gap-3"
                   >
                     <p className="text-sm font-semibold">{lang.name}</p>
-                    <p className="text-xs text-foreground/50">{lang.level}</p>
+                    <p className="text-xs text-foreground/50">
+                      {levels[lang.level] ?? lang.level}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -130,10 +143,10 @@ export default function Resume() {
 
             <div>
               <h4 className="font-display mb-4 text-lg font-bold text-fuchsia-600">
-                Interests
+                {t.subsections.interests}
               </h4>
               <div className="flex flex-wrap gap-1.5">
-                {interests.map((interest) => (
+                {dict.data.interests.map((interest) => (
                   <span
                     key={interest}
                     className="rounded-full bg-black/5 px-2.5 py-1 text-xs font-medium text-foreground/70"
@@ -147,7 +160,7 @@ export default function Resume() {
         </div>
 
         <div className="border-t border-black/5 bg-black/[0.02] px-8 py-5 text-sm text-foreground/60 md:px-10">
-          Built this resume with my own tool —{" "}
+          {t.footer}{" "}
           <a
             href="https://www.quickresumebuilder.online"
             target="_blank"

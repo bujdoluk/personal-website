@@ -1,6 +1,9 @@
 import { profile } from "@/lib/data";
+import type { Dictionary } from "@/lib/i18n";
 
-export default function About() {
+export default function About({ dict }: { dict: Dictionary }) {
+  const t = dict.about;
+
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-20">
       <div className="grid gap-10 md:grid-cols-[auto_1fr] md:items-center md:gap-16">
@@ -19,13 +22,13 @@ export default function About() {
 
         <div>
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-fuchsia-600">
-            About
+            {t.sectionLabel}
           </p>
           <h2 className="font-display mb-4 text-3xl font-bold tracking-tight md:text-4xl">
-            A bit about me
+            {t.heading}
           </h2>
           <p className="max-w-2xl text-base leading-relaxed text-foreground/70 md:text-lg">
-            {profile.bio}
+            {dict.data.profile.bio}
           </p>
           <p className="mt-4 text-sm text-foreground/50">{profile.location}</p>
         </div>

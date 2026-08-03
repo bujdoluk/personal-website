@@ -1,0 +1,138 @@
+{
+  "navbar": {
+    "about": "O mně",
+    "experience": "Zkušenosti",
+    "skills": "Dovednosti",
+    "projects": "Projekty",
+    "resume": "Životopis",
+    "contact": "Kontakt",
+    "toggleMenu": "Přepnout menu"
+  },
+  "hero": {
+    "badge": "Otevřený novým příležitostem",
+    "greeting": "Ahoj, jsem",
+    "viewResume": "Zobrazit životopis",
+    "contactMe": "Kontaktujte mě"
+  },
+  "about": {
+    "sectionLabel": "O mně",
+    "heading": "Něco o mně"
+  },
+  "experience": {
+    "sectionLabel": "Zkušenosti",
+    "heading": "Kde jsem pracoval"
+  },
+  "skills": {
+    "sectionLabel": "Dovednosti",
+    "heading": "S čím pracuji"
+  },
+  "projects": {
+    "sectionLabel": "Projekty",
+    "heading": "Co jsem vytvořil",
+    "featuredBadge": "Hlavní projekt",
+    "visitLink": "Navštívit"
+  },
+  "resume": {
+    "sectionLabel": "Životopis",
+    "heading": "Můj životopis",
+    "downloadPdf": "Stáhnout PDF",
+    "subsections": {
+      "experience": "Zkušenosti",
+      "education": "Vzdělání",
+      "skills": "Dovednosti",
+      "languages": "Jazyky",
+      "interests": "Zájmy"
+    },
+    "footer": "Tento životopis jsem vytvořil vlastním nástrojem —"
+  },
+  "contact": {
+    "sectionLabel": "Kontakt",
+    "heading": "Pojďme společně vytvořit něco skvělého.",
+    "description": "Máte projekt na mysli nebo se chcete jen pozdravit? Moje schránka je vždy otevřená.",
+    "copyEmail": "Kopírovat e-mailovou adresu",
+    "copied": "Zkopírováno!",
+    "emailCopied": "E-mail zkopírován do schránky"
+  },
+  "footer": {
+    "rights": "Všechna práva vyhrazena.",
+    "builtWith": "Vytvořeno s Next.js & Tailwind CSS ·"
+  },
+  "notFound": {
+    "code": "404",
+    "heading": "Stránka nenalezena",
+    "description": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
+    "backHome": "Zpět na úvodní stránku"
+  },
+  "data": {
+    "profile": {
+      "role": "Webový vývojář",
+      "tagline": "Vytvářím rychlé, přístupné a příjemné webové aplikace — od nápadu až po nasazení.",
+      "bio": "Jsem frontend developer, kterého baví proměňovat nápady v kvalitní produkty připravené pro reálné použití. Posledních několik let pracuji především s frameworky Vue a React a zaměřuji se na přehledná uživatelská rozhraní a kód, který je čistý, udržitelný a dobře se s ním pracuje i z dlouhodobého hlediska. Když zrovna nepracuji na vlastních projektech, jako je quickresumebuilder.online, chodím cvičit nebo vyrážím na turistiku."
+    },
+    "skills": {
+      "categories": {
+        "Frontend": "Frontend",
+        "Frameworks": "Frameworky",
+        "Backend": "Backend",
+        "Databases": "Databáze",
+        "Testing": "Testování",
+        "Tools": "Nástroje",
+        "Project management": "Projektový management",
+        "AI": "Umělá inteligence"
+      }
+    },
+    "experience": [
+      {
+        "role": "Frontend vývojář",
+        "bullets": [
+          "Pracoval na aplikacích v oblasti maloobchodu a logistiky",
+          "Implementoval UI komponenty z knihovny Vuetify",
+          "Napsal vlastní komponenty jako náhradu za nefunkční komponenty ve Vuetify",
+          "Navrhoval znovupoužitelné komponenty ve Vue JS",
+          "Použil leaflet.js a apexchart k implementaci map a grafů",
+          "Migroval projekt z vue2 na vue3",
+          "Použil specifikaci JSON:API pro data",
+          "Napsal e2e testy v Cypress",
+          "Dockerizoval frontendovou klientskou aplikaci",
+          "Spravoval frontendové úkoly v Jira"
+        ]
+      },
+      {
+        "role": "Operátor výroby",
+        "bullets": [
+          "Montáž rádií a tachometrů pro Porsche, VW, Citroën, Peugeot, Opel",
+          "Montáž, testování, kontrola kvality"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "subject": "Diplom: Základy programování v jazyce Java",
+        "description": "Studium základů OOP programování v Javě a databázového jazyka SQL."
+      },
+      {
+        "subject": "Průmysl 4.0",
+        "description": "Studované předměty → umělá inteligence, statistická mechanika, návrh výrobních procesů, průmyslové roboty, právo, ekonomie"
+      },
+      {
+        "subject": "Teoretické základy strojního inženýrství",
+        "description": "Studované předměty → matematika, mechanika, fyzika, pružnost a pevnost, materiály, technologie, termodynamika, mechanika tekutin, mikroelektronika atd."
+      }
+    ],
+    "spokenLanguages": {
+      "levels": {
+        "Native": "Rodný jazyk",
+        "Professional working proficiency": "Profesionální pracovní úroveň"
+      }
+    },
+    "interests": ["Turistika", "Čtení", "Posilování"],
+    "projects": [
+      {
+        "description": "Webová aplikace pro tvorbu životopisů, která každému umožní vytvořit profesionální životopis vhodný pro ATS během několika minut — živé šablony, okamžitý export do PDF a žádná registrace není potřeba."
+      },
+      {
+        "description": "Platforma pro správu zpětné vazby od uživatelů. Uživatelé mohou odesílat a hlasovat pro požadavky na funkce, produktové týmy mohou sdílet veřejný plán vývoje a publikovat seznam změn — přeměna zpětné vazby na konkrétní produktová rozhodnutí."
+      }
+    ]
+  }
+}

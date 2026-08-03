@@ -7,21 +7,25 @@ import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { getDictionary, getLocale } from "@/lib/i18n";
 
-export default function Home() {
+export default async function Home() {
+  const locale = await getLocale();
+  const dict = await getDictionary(locale);
+
   return (
     <>
       <Navbar />
       <main className="flex-1">
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Resume />
+        <Hero dict={dict} />
+        <About dict={dict} />
+        <Experience dict={dict} />
+        <Skills dict={dict} />
+        <Projects dict={dict} />
+        <Resume dict={dict} />
         <Contact />
       </main>
-      <Footer />
+      <Footer dict={dict} />
     </>
   );
 }
