@@ -21,9 +21,6 @@ export default function About({ dict }: { dict: Dictionary }) {
         )}
 
         <div>
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-fuchsia-600">
-            {t.sectionLabel}
-          </p>
           <h2 className="font-display mb-4 text-3xl font-bold tracking-tight md:text-4xl">
             {t.heading}
           </h2>

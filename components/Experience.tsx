@@ -1,15 +1,13 @@
 import { experience } from "@/lib/data";
 import type { Dictionary } from "@/lib/i18n";
+import { formatDate } from "@/lib/format";
 
-export default function Experience({ dict }: { dict: Dictionary }) {
+export default function Experience({ dict, locale }: { dict: Dictionary; locale: string }) {
   const t = dict.experience;
 
   return (
     <section id="experience" className="bg-black/[0.02] py-20">
       <div className="mx-auto max-w-6xl px-6">
-        <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-fuchsia-600">
-          {t.sectionLabel}
-        </p>
         <h2 className="font-display mb-12 text-3xl font-bold tracking-tight md:text-4xl">
           {t.heading}
         </h2>
@@ -24,7 +22,7 @@ export default function Experience({ dict }: { dict: Dictionary }) {
                 <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                   <h3 className="font-display text-xl font-bold">{td.role}</h3>
                   <span className="text-sm font-medium text-foreground/50">
-                    {job.start} — {job.end}
+                    {formatDate(job.start, locale)} — {formatDate(job.end, locale)}
                   </span>
                 </div>
                 <p className="mb-3 text-sm font-semibold text-fuchsia-600">

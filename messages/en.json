@@ -46,9 +46,7 @@
     "footer": "Built this resume with my own tool —"
   },
   "contact": {
-    "sectionLabel": "Contact",
-    "heading": "Let's build something great together.",
-    "description": "Have a project in mind, or just want to say hi? My inbox is always open.",
+    "heading": "Contact",
     "copyEmail": "Copy email address",
     "copied": "Copied!",
     "emailCopied": "Email copied to clipboard"

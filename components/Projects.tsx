@@ -7,9 +7,6 @@ export default function Projects({ dict }: { dict: Dictionary }) {
   return (
     <section id="projects" className="bg-black/[0.02] py-20">
       <div className="mx-auto max-w-6xl px-6">
-        <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-fuchsia-600">
-          {t.sectionLabel}
-        </p>
         <h2 className="font-display mb-12 text-3xl font-bold tracking-tight md:text-4xl">
           {t.heading}
         </h2>

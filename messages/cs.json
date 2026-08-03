@@ -46,9 +46,7 @@
     "footer": "Tento životopis jsem vytvořil vlastním nástrojem —"
   },
   "contact": {
-    "sectionLabel": "Kontakt",
-    "heading": "Pojďme společně vytvořit něco skvělého.",
-    "description": "Máte projekt na mysli nebo se chcete jen pozdravit? Moje schránka je vždy otevřená.",
+    "heading": "Kontakt",
     "copyEmail": "Kopírovat e-mailovou adresu",
     "copied": "Zkopírováno!",
     "emailCopied": "E-mail zkopírován do schránky"

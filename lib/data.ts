@@ -20,13 +20,13 @@ export type Experience = {
 export const experience: Experience[] = [
   {
     company: "Logio, Prague, Czech Republic",
-    start: "Jun 2022",
-    end: "Dec 2025",
+    start: "2022-06",
+    end: "2025-12",
   },
   {
     company: "Marelli, Kechnec, Slovakia",
-    start: "Nov 2020",
-    end: "May 2022",
+    start: "2020-11",
+    end: "2022-05",
   },
 ];
 
@@ -81,20 +81,20 @@ export const education: Education[] = [
   {
     school: "IT v Kurze",
     degree: "-",
-    start: "Oct 2019",
-    end: "May 2020",
+    start: "2019-10",
+    end: "2020-05",
   },
   {
     school: "Czech Technical University in Prague",
     degree: "-",
-    start: "Sept 2017",
-    end: "Sept 2019",
+    start: "2017-09",
+    end: "2019-09",
   },
   {
     school: "Czech Technical University in Prague",
     degree: "Bc.",
-    start: "Sept 2013",
-    end: "Sept 2017",
+    start: "2013-09",
+    end: "2017-09",
   },
 ];
 

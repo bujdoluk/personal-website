@@ -28,15 +28,9 @@ export default function Contact() {
       <div className="bg-blob absolute inset-0 -z-10 opacity-20 blur-3xl" />
 
       <div className="mx-auto max-w-6xl px-6 py-24 text-center">
-        <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-fuchsia-600">
-          {t.sectionLabel}
-        </p>
         <h2 className="font-display mx-auto mb-4 max-w-2xl text-3xl font-bold tracking-tight md:text-5xl">
           {t.heading}
         </h2>
-        <p className="mx-auto mb-8 max-w-xl text-foreground/70">
-          {t.description}
-        </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
           <div className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-violet-600 via-fuchsia-500 to-orange-400 p-1.5 pl-6 shadow-lg shadow-fuchsia-500/20">

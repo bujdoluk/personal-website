@@ -1,17 +1,15 @@
 import { education, experience, profile, skills, spokenLanguages } from "@/lib/data";
 import SkillIcon from "@/components/SkillIcon";
 import type { Dictionary } from "@/lib/i18n";
+import { formatDate } from "@/lib/format";
 
-export default function Resume({ dict }: { dict: Dictionary }) {
+export default function Resume({ dict, locale }: { dict: Dictionary; locale: string }) {
   const t = dict.resume;
   const categories = dict.data.skills.categories as Record<string, string>;
   const levels = dict.data.spokenLanguages.levels as Record<string, string>;
 
   return (
     <section id="resume" className="mx-auto max-w-6xl px-6 py-20">
-      <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-fuchsia-600">
-        {t.sectionLabel}
-      </p>
       <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
         <h2 className="font-display text-3xl font-bold tracking-tight md:text-4xl">
           {t.heading}
@@ -50,7 +48,7 @@ export default function Resume({ dict }: { dict: Dictionary }) {
                     <div className="flex flex-wrap items-baseline justify-between gap-x-3">
                       <p className="font-semibold">{td.role}</p>
                       <span className="text-xs text-foreground/50">
-                        {job.start} — {job.end}
+                        {formatDate(job.start, locale)} — {formatDate(job.end, locale)}
                       </span>
                     </div>
                     <p className="mb-1 text-sm text-foreground/60">{job.company}</p>
@@ -83,7 +81,7 @@ export default function Resume({ dict }: { dict: Dictionary }) {
                         {item.degree !== "-" && ` · ${item.degree}`}
                       </p>
                       <p className="text-xs text-foreground/50">
-                        {item.start} — {item.end}
+                        {formatDate(item.start, locale)} — {formatDate(item.end, locale)}
                       </p>
                       {td.description && (
                         <p className="mt-1 text-sm text-foreground/70">

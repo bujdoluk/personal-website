@@ -19,10 +19,10 @@ export default async function Home() {
       <main className="flex-1">
         <Hero dict={dict} />
         <About dict={dict} />
-        <Experience dict={dict} />
+        <Experience dict={dict} locale={locale} />
         <Skills dict={dict} />
         <Projects dict={dict} />
-        <Resume dict={dict} />
+        <Resume dict={dict} locale={locale} />
         <Contact />
       </main>
       <Footer dict={dict} />
