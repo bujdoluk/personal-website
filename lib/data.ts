@@ -1,3 +1,9 @@
+export const resumeUrls: Record<string, string> = {
+  en: "/Lukas_Bujdos_Resume.pdf",
+  sk: "/Lukas_Bujdos_Zivotopis.pdf",
+  cs: "/Lukas_Bujdos_Zivotopis.pdf",
+};
+
 export const profile = {
   name: "Lukáš Bujdoš",
   location: "Nižná Myšľa, Slovakia",

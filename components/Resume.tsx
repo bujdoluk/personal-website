@@ -1,4 +1,4 @@
-import { education, experience, profile, skills, spokenLanguages } from "@/lib/data";
+import { education, experience, profile, resumeUrls, skills, spokenLanguages } from "@/lib/data";
 import SkillIcon from "@/components/SkillIcon";
 import type { Dictionary } from "@/lib/i18n";
 import { formatDate } from "@/lib/format";
@@ -15,7 +15,7 @@ export default function Resume({ dict, locale }: { dict: Dictionary; locale: str
           {t.heading}
         </h2>
         <a
-          href={t.resumeUrl}
+          href={resumeUrls[locale] ?? profile.resumeUrl}
           download
           className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 via-fuchsia-500 to-orange-400 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-fuchsia-500/20 transition-transform hover:scale-105"
         >
