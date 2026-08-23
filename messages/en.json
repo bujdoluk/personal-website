@@ -126,6 +126,9 @@
     "interests": ["Hiking", "Reading", "Weight-lifting"],
     "projects": [
       {
+        "description": "A service status monitoring platform that lets teams track the live status of the services they depend on — status boards with real-time updates, incident and maintenance history, and GitHub integration to pull status automatically."
+      },
+      {
         "description": "A resume builder web app that lets anyone create a polished, ATS-friendly resume in minutes — live templates, instant PDF export, and no sign-up required to get started."
       },
       {

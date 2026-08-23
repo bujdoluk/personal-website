@@ -68,7 +68,7 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "Project management",
-    items: ["Jira"],
+    items: ["Jira", "Slack"],
   },
   {
     category: "AI",
@@ -131,6 +131,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: "downDATA",
+    url: "https://downdata.vercel.app",
+    languages: [
+      { name: "TypeScript", percent: 87.7, widthClassName: "w-[87.7%]", colorClassName: "bg-[#3178c6]" },
+      { name: "PLpgSQL", percent: 5.5, widthClassName: "w-[5.5%]", colorClassName: "bg-[#336790]" },
+      { name: "Python", percent: 2.9, widthClassName: "w-[2.9%]", colorClassName: "bg-[#3572a5]" },
+      { name: "JavaScript", percent: 2.3, widthClassName: "w-[2.3%]", colorClassName: "bg-[#f1e05a]" },
+      { name: "CSS", percent: 1.6, widthClassName: "w-[1.6%]", colorClassName: "bg-[#663399]" },
+    ],
+    featured: true,
+    imageUrl: "/projects/downdata.webp",
+  },
+  {
     name: "QuickResumeBuilder",
     url: "https://www.quickresumebuilder.online",
     languages: [
@@ -139,7 +152,6 @@ export const projects: Project[] = [
       { name: "JavaScript", percent: 0.7, widthClassName: "w-[0.7%]", colorClassName: "bg-[#f1e05a]" },
       { name: "CSS", percent: 0.4, widthClassName: "w-[0.4%]", colorClassName: "bg-[#663399]" },
     ],
-    featured: true,
     imageUrl: "/projects/quickresumebuilder.webp",
   },
   {

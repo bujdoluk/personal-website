@@ -126,6 +126,9 @@
     "interests": ["Turistika", "Čtení", "Posilování"],
     "projects": [
       {
+        "description": "Platforma pro monitorování stavu služeb, která týmům umožňuje sledovat aktuální stav služeb, na kterých závisí — nástěnky se stavem v reálném čase, historie incidentů a údržby a integrace s GitHubem pro automatické načítání stavu."
+      },
+      {
         "description": "Webová aplikace pro tvorbu životopisů, která každému umožní vytvořit profesionální životopis vhodný pro ATS během několika minut — živé šablony, okamžitý export do PDF a žádná registrace není potřeba."
       },
       {

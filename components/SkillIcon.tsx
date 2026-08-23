@@ -15,6 +15,16 @@ export default function SkillIcon({
     return <Icon className={`${className} ${icon.colorClassName}`} />;
   }
 
+  if ("paths" in icon) {
+    return (
+      <svg viewBox={icon.viewBox} role="img" aria-hidden="true" className={className}>
+        {icon.paths.map((p) => (
+          <path key={p.d} d={p.d} fill={p.fill} />
+        ))}
+      </svg>
+    );
+  }
+
   return (
     <svg
       viewBox="0 0 24 24"
