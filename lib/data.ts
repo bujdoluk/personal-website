@@ -60,7 +60,7 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "Testing",
-    items: ["Cypress", "Vitest"],
+    items: ["Cypress", "Vitest", "Playwright"],
   },
   {
     category: "Tools",
