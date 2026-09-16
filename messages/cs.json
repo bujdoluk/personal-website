@@ -65,7 +65,7 @@
     "profile": {
       "role": "Webový vývojář",
       "tagline": "Vytvářím rychlé, přístupné a příjemné webové aplikace — od nápadu až po nasazení.",
-      "bio": "Jsem frontend developer, kterého baví proměňovat nápady v kvalitní produkty připravené pro reálné použití. Posledních několik let pracuji především s frameworky Vue a React a zaměřuji se na přehledná uživatelská rozhraní a kód, který je čistý, udržitelný a dobře se s ním pracuje i z dlouhodobého hlediska. Když zrovna nepracuji na vlastních projektech, jako je quickresumebuilder.online, chodím cvičit nebo vyrážím na turistiku."
+      "bio": "Jsem web developer, kterého baví proměňovat nápady v kvalitní produkty připravené pro reálné použití. Posledních několik let pracuji především s frameworky Vue a React a zaměřuji se na přehledná uživatelská rozhraní a kód, který je čistý, udržitelný a dobře se s ním pracuje i z dlouhodobého hlediska. Když zrovna nepracuji na vlastních projektech, jako je quickresumebuilder.online, chodím cvičit nebo vyrážím na turistiku."
     },
     "skills": {
       "categories": {
@@ -81,7 +81,7 @@
     },
     "experience": [
       {
-        "role": "Frontend vývojář",
+        "role": "Webový vývojář",
         "bullets": [
           "Pracoval na aplikacích v oblasti maloobchodu a logistiky",
           "Implementoval UI komponenty z knihovny Vuetify",

@@ -65,7 +65,7 @@
     "profile": {
       "role": "Web Developer",
       "tagline": "I build fast, accessible, and delightful web experiences from idea to production.",
-      "bio": "I'm a frontend web developer who loves turning ambiguous ideas into polished, shippable products. I've spent the last several years working with Vue and React on the front end with a focus on clean UX, and code that's easy to maintain. When I'm not shipping features, I'm usually tinkering on side projects like QuickResumeBuilder."
+      "bio": "I'm a web developer who loves turning ambiguous ideas into polished, shippable products. I've spent the last several years working with Vue and React on the front end with a focus on clean UX, and code that's easy to maintain. When I'm not shipping features, I'm usually tinkering on side projects like QuickResumeBuilder."
     },
     "skills": {
       "categories": {
@@ -81,7 +81,7 @@
     },
     "experience": [
       {
-        "role": "Frontend Developer",
+        "role": "Web Developer",
         "bullets": [
           "Worked on apps in retail and logistics",
           "Implemented UI components from Vuetify library",
