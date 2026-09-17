@@ -43,7 +43,7 @@
       "languages": "Languages",
       "interests": "Interests"
     },
-    "footer": "Built this resume with my own tool —"
+    "footer": "Built this resume with my own tool:"
   },
   "contact": {
     "heading": "Contact",
@@ -65,7 +65,7 @@
     "profile": {
       "role": "Web Developer",
       "tagline": "I build fast, accessible, and delightful web experiences from idea to production.",
-      "bio": "I'm a web developer who loves turning ambiguous ideas into polished, shippable products. I've spent the last several years working with Vue and React on the front end with a focus on clean UX, and code that's easy to maintain. When I'm not shipping features, I'm usually tinkering on side projects like QuickResumeBuilder."
+      "bio": "I'm a web developer who loves turning ambiguous ideas into polished, shippable products. I've spent the last several years working with Vue and React on the front end with a focus on clean UX, and code that's easy to maintain. When I'm not shipping features, I'm usually tinkering on side projects like {downdata} and {qrb}."
     },
     "skills": {
       "categories": {
@@ -126,13 +126,13 @@
     "interests": ["Hiking", "Reading", "Weight-lifting"],
     "projects": [
       {
-        "description": "A service status monitoring platform that lets teams track the live status of the services they depend on — status boards with real-time updates, incident and maintenance history, and GitHub integration to pull status automatically."
+        "description": "A service status monitoring platform that lets teams track the live status of the services they depend on: status boards with real-time updates, incident and maintenance history, and GitHub integration to pull status automatically."
       },
       {
-        "description": "A resume builder web app that lets anyone create a polished, ATS-friendly resume in minutes — live templates, instant PDF export, and no sign-up required to get started."
+        "description": "A resume builder web app that lets anyone create a polished, ATS-friendly resume in minutes: live templates, instant PDF export, and no sign-up required to get started."
       },
       {
-        "description": "A product feedback management platform. Users can submit and vote on feature requests, product teams can share a public roadmap of planned/in-progress work, and publish a changelog to communicate updates — turning user feedback into actionable product decisions."
+        "description": "A product feedback management platform. Users can submit and vote on feature requests, product teams can share a public roadmap of planned/in-progress work, and publish a changelog to communicate updates, turning user feedback into actionable product decisions."
       }
     ]
   }

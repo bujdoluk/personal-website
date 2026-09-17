@@ -1,5 +1,40 @@
-import { profile } from "@/lib/data";
+import { profile, projects } from "@/lib/data";
 import type { Dictionary } from "@/lib/i18n";
+
+const downdataUrl = projects.find((p) => p.name === "downDATA")?.url;
+const quickResumeBuilderUrl = projects.find((p) => p.name === "QuickResumeBuilder")?.url;
+
+function renderBio(bio: string) {
+  return bio.split(/(\{downdata\}|\{qrb\})/g).map((part, i) => {
+    if (part === "{downdata}") {
+      return (
+        <a
+          key={i}
+          href={downdataUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-gradient-to-r from-violet-600 via-fuchsia-500 to-orange-400 bg-clip-text font-semibold text-transparent underline decoration-fuchsia-500/50 underline-offset-4 hover:decoration-fuchsia-500"
+        >
+          downDATA
+        </a>
+      );
+    }
+    if (part === "{qrb}") {
+      return (
+        <a
+          key={i}
+          href={quickResumeBuilderUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground/60"
+        >
+          QuickResumeBuilder
+        </a>
+      );
+    }
+    return part;
+  });
+}
 
 export default function About({ dict }: { dict: Dictionary }) {
   const t = dict.about;
@@ -25,7 +60,7 @@ export default function About({ dict }: { dict: Dictionary }) {
             {t.heading}
           </h2>
           <p className="max-w-2xl text-base leading-relaxed text-foreground/70 md:text-lg">
-            {dict.data.profile.bio}
+            {renderBio(dict.data.profile.bio)}
           </p>
           <p className="mt-4 text-sm text-foreground/50">{profile.location}</p>
         </div>

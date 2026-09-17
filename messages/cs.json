@@ -43,7 +43,7 @@
       "languages": "Jazyky",
       "interests": "Zájmy"
     },
-    "footer": "Tento životopis jsem vytvořil vlastním nástrojem —"
+    "footer": "Tento životopis jsem vytvořil vlastním nástrojem:"
   },
   "contact": {
     "heading": "Kontakt",
@@ -64,8 +64,8 @@
   "data": {
     "profile": {
       "role": "Webový vývojář",
-      "tagline": "Vytvářím rychlé, přístupné a příjemné webové aplikace — od nápadu až po nasazení.",
-      "bio": "Jsem web developer, kterého baví proměňovat nápady v kvalitní produkty připravené pro reálné použití. Posledních několik let pracuji především s frameworky Vue a React a zaměřuji se na přehledná uživatelská rozhraní a kód, který je čistý, udržitelný a dobře se s ním pracuje i z dlouhodobého hlediska. Když zrovna nepracuji na vlastních projektech, jako je quickresumebuilder.online, chodím cvičit nebo vyrážím na turistiku."
+      "tagline": "Vytvářím rychlé, přístupné a příjemné webové aplikace, od nápadu až po nasazení.",
+      "bio": "Jsem web developer, kterého baví proměňovat nápady v kvalitní produkty připravené pro reálné použití. Posledních několik let pracuji především s frameworky Vue a React a zaměřuji se na přehledná uživatelská rozhraní a kód, který je čistý, udržitelný a dobře se s ním pracuje i z dlouhodobého hlediska. Když zrovna nepracuji na vlastních projektech, jako jsou {downdata} a {qrb}, chodím cvičit nebo vyrážím na turistiku."
     },
     "skills": {
       "categories": {
@@ -126,13 +126,13 @@
     "interests": ["Turistika", "Čtení", "Posilování"],
     "projects": [
       {
-        "description": "Platforma pro monitorování stavu služeb, která týmům umožňuje sledovat aktuální stav služeb, na kterých závisí — nástěnky se stavem v reálném čase, historie incidentů a údržby a integrace s GitHubem pro automatické načítání stavu."
+        "description": "Platforma pro monitorování stavu služeb, která týmům umožňuje sledovat aktuální stav služeb, na kterých závisí: nástěnky se stavem v reálném čase, historie incidentů a údržby a integrace s GitHubem pro automatické načítání stavu."
       },
       {
-        "description": "Webová aplikace pro tvorbu životopisů, která každému umožní vytvořit profesionální životopis vhodný pro ATS během několika minut — živé šablony, okamžitý export do PDF a žádná registrace není potřeba."
+        "description": "Webová aplikace pro tvorbu životopisů, která každému umožní vytvořit profesionální životopis vhodný pro ATS během několika minut: živé šablony, okamžitý export do PDF a žádná registrace není potřeba."
       },
       {
-        "description": "Platforma pro správu zpětné vazby od uživatelů. Uživatelé mohou odesílat a hlasovat pro požadavky na funkce, produktové týmy mohou sdílet veřejný plán vývoje a publikovat seznam změn — přeměna zpětné vazby na konkrétní produktová rozhodnutí."
+        "description": "Platforma pro správu zpětné vazby od uživatelů. Uživatelé mohou odesílat a hlasovat pro požadavky na funkce, produktové týmy mohou sdílet veřejný plán vývoje a publikovat seznam změn, čímž proměňují zpětnou vazbu na konkrétní produktová rozhodnutí."
       }
     ]
   }

@@ -43,7 +43,7 @@
       "languages": "Jazyky",
       "interests": "Záujmy"
     },
-    "footer": "Tento životopis som vytvoril vlastným nástrojom —"
+    "footer": "Tento životopis som vytvoril vlastným nástrojom:"
   },
   "contact": {
     "heading": "Kontakt",
@@ -64,8 +64,8 @@
   "data": {
     "profile": {
       "role": "Webový vývojár",
-      "tagline": "Vytváram rýchle, prístupné a príjemné webové aplikácie — od nápadu až po nasadenie.",
-      "bio": "Som web developer, ktorého baví premieňať nápady na kvalitné produkty pripravené na reálne používanie. Posledných niekoľko rokov pracujem najmä s frameworkmi Vue a React, pričom sa zameriavam na prehľadné používateľské rozhrania a kód, ktorý je čistý, udržateľný a dobre sa s ním pracuje aj z dlhodobého hľadiska. Keď nepracujem na vlastných projektoch ako quickresumebuilder.online tak chodím cvičiť alebo na turistiku."
+      "tagline": "Vytváram rýchle, prístupné a príjemné webové aplikácie, od nápadu až po nasadenie.",
+      "bio": "Som web developer, ktorého baví premieňať nápady na kvalitné produkty pripravené na reálne používanie. Posledných niekoľko rokov pracujem najmä s frameworkmi Vue a React, pričom sa zameriavam na prehľadné používateľské rozhrania a kód, ktorý je čistý, udržateľný a dobre sa s ním pracuje aj z dlhodobého hľadiska. Keď nepracujem na vlastných projektoch ako {downdata} a {qrb} tak chodím cvičiť alebo na turistiku."
     },
     "skills": {
       "categories": {
@@ -126,13 +126,13 @@
     "interests": ["Turistika", "Čítanie", "Posilňovanie"],
     "projects": [
       {
-        "description": "Platforma na monitorovanie stavu služieb, ktorá tímom umožňuje sledovať aktuálny stav služieb, na ktoré sa spoliehajú — nástenky so stavom v reálnom čase, história incidentov a údržby a integrácia s GitHubom na automatické načítanie stavu."
+        "description": "Platforma na monitorovanie stavu služieb, ktorá tímom umožňuje sledovať aktuálny stav služieb, na ktoré sa spoliehajú: nástenky so stavom v reálnom čase, história incidentov a údržby a integrácia s GitHubom na automatické načítanie stavu."
       },
       {
-        "description": "Webová aplikácia na tvorbu životopisov, ktorá každému umožní vytvoriť profesionálny životopis vhodný pre ATS za pár minút — živé šablóny, okamžitý export do PDF a žiadna registrácia nie je potrebná."
+        "description": "Webová aplikácia na tvorbu životopisov, ktorá každému umožní vytvoriť profesionálny životopis vhodný pre ATS za pár minút: živé šablóny, okamžitý export do PDF a žiadna registrácia nie je potrebná."
       },
       {
-        "description": "Platforma na správu spätnej väzby od používateľov. Používatelia môžu odosielať a hlasovať za požiadavky na funkcie, produktové tímy môžu zdieľať verejný plán vývoja a publikovať zoznam zmien — premena spätnej väzby na konkrétne produktové rozhodnutia."
+        "description": "Platforma na správu spätnej väzby od používateľov. Používatelia môžu odosielať a hlasovať za požiadavky na funkcie, produktové tímy môžu zdieľať verejný plán vývoja a publikovať zoznam zmien, čím premieňajú spätnú väzbu na konkrétne produktové rozhodnutia."
       }
     ]
   }
