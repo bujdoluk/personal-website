@@ -132,7 +132,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     name: "downDATA",
-    url: "https://downdata.vercel.app",
+    url: "https://github.com/bujdoluk/downdata",
     languages: [
       { name: "TypeScript", percent: 95.1, widthClassName: "w-[95.1%]", colorClassName: "bg-[#3178c6]" },
       { name: "PLpgSQL", percent: 2.6, widthClassName: "w-[2.6%]", colorClassName: "bg-[#336790]" },
@@ -145,7 +145,7 @@ export const projects: Project[] = [
   },
   {
     name: "QuickResumeBuilder",
-    url: "https://www.quickresumebuilder.online",
+    url: "https://github.com/bujdoluk/resume-builder",
     languages: [
       { name: "TypeScript", percent: 98.0, widthClassName: "w-[98%]", colorClassName: "bg-[#3178c6]" },
       { name: "TSQL", percent: 0.9, widthClassName: "w-[0.9%]", colorClassName: "bg-[#e38c00]" },
@@ -156,7 +156,7 @@ export const projects: Project[] = [
   },
   {
     name: "Feedback App",
-    url: "https://feedback-app-a6506.web.app",
+    url: "https://github.com/bujdoluk/Product-feedback-app",
     languages: [
       { name: "Vue", percent: 92.1, widthClassName: "w-[92.1%]", colorClassName: "bg-[#41b883]" },
       { name: "JavaScript", percent: 7.1, widthClassName: "w-[7.1%]", colorClassName: "bg-[#f1e05a]" },
